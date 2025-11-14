@@ -1,0 +1,15 @@
+[project]
+name = "dsc10-tutor-agent"
+version = "0.1.0"
+description = "SLH Tutor Agent for DSC 10"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = []
+
+[dependency-groups]
+dev = [
+    "babypandas>=1.0.0",
+    "jupyter-ai>=2.31.6",
+    "jupyterlab>=4.4.10",
+    "otter-grader>=6.1.6",
+]
