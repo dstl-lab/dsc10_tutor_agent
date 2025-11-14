@@ -1,15 +1,25 @@
 [project]
-name = "dsc10-tutor-agent"
+name = "dsc10_tutor_agent"
 version = "0.1.0"
-description = "SLH Tutor Agent for DSC 10"
+description = "Tutor agent for DSC 10"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = []
+
+[project.optional-dependencies]
+sam = [
+    "langchain-anthropic>=0.3.22",
+]
 
 [dependency-groups]
 dev = [
     "babypandas>=1.0.0",
     "jupyter-ai>=2.31.6",
     "jupyterlab>=4.4.10",
+    "matplotlib>=3.10.7",
     "otter-grader>=6.1.6",
 ]
+
+[build-system]
+requires = ["uv_build>=0.9.9,<0.10.0"]
+build-backend = "uv_build"
